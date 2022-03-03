@@ -12,14 +12,15 @@ Along with the video of the presentation, this repository will link to all the a
 
 Here are the sessions available: 
 
-![Learning Path](https://img.shields.io/badge/Community%20Presentations-Generic-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-?-31c754)
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Generic-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 
 
-![Learning Path](https://img.shields.io/badge/Community%20Presentations-Azure-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-?-31c754)
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Azure-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 
-![Learning Path](https://img.shields.io/badge/Community%20Presentations-AWS-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-?-31c754)
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-AWS-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 
-![Learning Path](https://img.shields.io/badge/Community%20Presentations-Beginner-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-?-31c754)
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-GCP-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Beginner-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 
 
 
