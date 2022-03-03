@@ -26,4 +26,4 @@ Here are the sessions available:
 
 ## Contributing
 
-To know more about about to contribute to this project please refer to the [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing](CONTRIBUTING.md) page.
+To know more about about to contribute to this project please refer to the [Code of Conduct](CODE_OF_CONDUCT.md) and [Contributing](contributing.md) page.
