@@ -12,6 +12,16 @@ Along with the video of the presentation, this repository will link to all the a
 
 Here are the sessions available: 
 
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Generic-fe5e00?logo=octopus%20deploy)
+
+
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Azure-fe5e00?logo=octopus%20deploy)
+
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-AWS-fe5e00?logo=octopus%20deploy)
+
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Beginner-fe5e00?logo=octopus%20deploy)
+
+
 
 ## Contributing
 
