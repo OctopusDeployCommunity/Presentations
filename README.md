@@ -14,7 +14,11 @@ Here are the sessions available:
 
 ![Learning Path](https://img.shields.io/badge/Community%20Presentations-Generic-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 
-![Learning Path](https://img.shields.io/badge/Community%20Presentations-Azure-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Azure-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-1-31c754)
+
+[Combine Azure Bicep and Octopus Deploy](https://github.com/OctopusDeployCommunity/Presentations/tree/main/Azure/AzureBicep)
+
+<Description>
 
 ![Learning Path](https://img.shields.io/badge/Community%20Presentations-AWS-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 

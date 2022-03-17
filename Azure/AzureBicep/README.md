@@ -9,8 +9,7 @@
 |-------------------|----------------------------------|
 | PowerPoint        | - [Presentation]() |
 | Videos            | - [Dry Run Rehearsal]() <br/>
-| Demos             | - [Demo 1 - Let’s Create a VM ](demos/README.md#demo-1---lets-create-a-vm) <br/>- [Demo 2 - Alternative PaaS - WebApp](demos/README.md#demo-2---plan-b-paas---webapp) <br/>- [Demo 3 - Securing the app with Azure Key Vault](demos/README.md#demo-3---securing-the-app-with-azure-key-vault)<br/>- [Demo 4 - Quick look at the Tailwind Traders App](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) |
-
+| Demos             | - 
 
 ## How To Use
 
@@ -34,7 +33,7 @@ This training repository is divided in to the following sections:
 |-------------------|---------------------------|--------------------------------------
 | 42 slides - 25 minutes, | 4 demos - 20 minutes, | 1 automated deployment
 
- [Full-length video can be viewed here](https://globaleventcdn.blob.core.windows.net/assets/apps/apps10/APPS10_full.mp4).
+
 
 ## Slides
 
