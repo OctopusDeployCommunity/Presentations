@@ -4,7 +4,7 @@
 
 # Sessions
 
-[Combine Azure Bicep and Octopus Deploy](https://github.com/OctopusDeployCommunity/Presentations/tree/main/Azure/AzureBicep)
+### [Combine Azure Bicep and Octopus Deploy](https://github.com/OctopusDeployCommunity/Presentations/tree/main/Azure/AzureBicep)
 
 Automation is key these days, to save time and avoid mistakes.
 
