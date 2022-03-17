@@ -12,10 +12,7 @@ Along with the video of the presentation, this repository will link to all the a
 
 Here are the sessions available: 
 
-![Learning Path](https://img.shields.io/badge/Community%20Presentations-Generic-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
-
 ![Learning Path](https://img.shields.io/badge/Community%20Presentations-Azure-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-1-31c754)
-
 ### [Combine Azure Bicep and Octopus Deploy](Azure/AzureBicep)
 
 Automation is key these days, to save time and avoid mistakes.
@@ -31,6 +28,10 @@ We'll then look at how you can automate the deployment of your infrastructure as
 ![Learning Path](https://img.shields.io/badge/Community%20Presentations-GCP-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
 
 ![Learning Path](https://img.shields.io/badge/Community%20Presentations-Beginner-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
+
+![Learning Path](https://img.shields.io/badge/Community%20Presentations-Generic-fe5e00?logo=octopus%20deploy) ![Session](https://img.shields.io/badge/🗣️Sessions-0-31c754)
+
+
 
 
 
