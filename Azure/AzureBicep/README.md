@@ -1,6 +1,12 @@
 ## Session Abstract
 
+Automation is key these days, to save time and avoid mistakes.
 
+Bicep is a new Domain Specific Language (DSL) that drastically simplifies the way of writing Infrastructure as Code for the Azure platform.
+
+In this session we'll go over this new language and learn how to get started.
+
+We'll then look at how you can automate the deployment of your infrastructure as code using Octopus Deploy's Runbook capabilities.
 
 
 ## Table of Content
