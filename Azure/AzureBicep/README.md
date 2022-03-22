@@ -70,11 +70,20 @@ Additional Slide                    | 22-26     |These are additional hidden sli
 
 ## Deployment / Preparation
 
+>**What's Here?**  - including the prerequisites.
+
+[Instructions and prerequisites are outlined here](deployment/README.md). 
 
 
 ## Demos
 
 > What's Here? Pre-delivery preparation, stage ready videos, required files (such as JSON templates), and walk-through videos
+
+Detailed explanations of each demonstration associated with this presentation can be found in this section. [You can get a high level overview of the tools and how we will be using them here](demos/README.md).
+
+| Demo 	                                    | Minutes | Video
+--------------------------------------------|---------|-----------------
+- [Demo 1 - Azure Bicep Storage template ](demos/README.md#demo-1---azure-bicep-storage-template) <br/>- [Demo 2 - Azure Bicep Storage template with a failure](demos/README.md#demo-2---plan-b-paas---webapp) <br/>- [Demo 3 - Deploy Azure Bicep template from Octopus Deploy ](demos/README.md#demo-3---securing-the-app-with-azure-key-vault)<br/>- [Demo 4 ](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) 
 
 
 
