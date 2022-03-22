@@ -13,7 +13,7 @@ We'll then look at how you can automate the deployment of your infrastructure as
 
 | Resources          | Links                            |
 |-------------------|----------------------------------|
-| PowerPoint        | - [Presentation]() |
+| Presentation       | - [PowerPoint]() | [Google Slides]()
 | Videos            | - [Dry Run Rehearsal]() <br/>
 | Demos             | - 
 
@@ -47,13 +47,14 @@ The [slides](presentations.md) are divided in five sections:
 
  Section                    | Slides           | Notes
 ----------------------------|---------------   |------
-Introduction                | 1-3              | This is where you can interact with the audience, introduce yourself and connect with them. 
-Infrastructure as Code          | 5-8            |  This is where you talk about the concept of Infrastructure as Code, what is is, why it's useful and the types of languages available. 
-Azure Bicep         | 9-13   | In this section you will start to talk about Azure Bicep, the benefits of it and when it's the right tool and when it's not. 
-Octopus Deploy      | 14-19 | This section is an introduction to Octopus Deploy. 
-Demo                    | 20      | This is chance to walk through the demos. 
-Next steps                    | 22  | Talk about the next steps of Infrastructure as Code, source control etc
-Summary                    | 23-25      | Summarise what you talked about, ask folk to try Octopus and say thank you. 
+Introduction                | 2-5             | This is where you introduce the audience to the presentation agenda and also introduce yourself to the audience. 
+Infrastructure as Code          | 6-8            |  This is where you talk about the concept of Infrastructure as Code, what is is, why it's useful and the types of languages available. 
+Azure Bicep         | 9-11   | In this section you will start to talk about Azure Bicep, the benefits of it and when it's the right tool and when it's not. 
+Octopus Deploy      | 12-15 | This section is an introduction to Octopus Deploy. 
+Demo                    | 16     | This is chance to walk through the demos. 
+Next steps                    | 18  | Talk about the next steps of Infrastructure as Code, source control etc
+Summary                    | 19-21      | Summarize what you talked about, ask folk to try Octopus and say thank you. 
+Additional Slide                    | 22-26     |These are additional hidden slides you can add or replace within the presentation if needed. 
 
 ### Timing
 
@@ -65,9 +66,9 @@ Summary                    | 23-25      | Summarise what you talked about, ask f
 20:00 - 35:00 | 
 35:00 - 40:00 | 
 40:00 - 45:00 | 
+45:00 - 50:00 | 
 
 ## Deployment / Preparation
-
 
 
 
