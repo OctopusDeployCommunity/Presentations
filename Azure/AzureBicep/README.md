@@ -13,9 +13,9 @@ We'll then look at how you can automate the deployment of your infrastructure as
 
 | Resources          | Links                            |
 |-------------------|----------------------------------|
-| Presentation       | - [PowerPoint]() | [Google Slides]()
+| Presentation       | - [PowerPoint](https://github.com/OctopusDeployCommunity/Presentations/blob/main/Azure/AzureBicep/CombineAzureBicepandOctopusDeployv1.pptx) | [Google Slides]()
 | Videos            | - [Dry Run Rehearsal]() <br/>
-| Demos             | - 
+| Demos             | [Demo 1 - Azure Bicep Storage template ](demos/README.md#demo-1---lets-create-a-vm) <br/>- [Demo 2 - Azure Bicep Storage template with a failure](demos/README.md#demo-2---plan-b-paas---webapp) <br/>- [Demo 3 - Deploy Azure Bicep template from Octopus Deploy ](demos/README.md#demo-3---securing-the-app-with-azure-key-vault)<br/>- [Demo 4 ](demos/README.md#demo-4---quick-look-at-the-tailwind-traders-app) |
 
 ## How To Use
 
