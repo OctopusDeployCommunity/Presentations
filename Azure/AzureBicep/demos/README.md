@@ -60,3 +60,35 @@ New-AzResourceGroupDeployment -Name StorageDeploymentv2 -resourceGroupName bicep
 This will try to deploy the template but will fail and show the allowed inputs hasn't been met. 
 
 ## Demo 3 - Deploy Azure Bicep template from Octopus Deploy
+
+We want to start to introduce to the audience that yes it's great to be able to create and deploy templates from your local machine, however what happens when you want to do that at scale or run at certain times during the day or not.  Or let others in your team do the deployments?
+
+Start to talk about how Octopus Deploy Runbooks can be used to deploy infrastructure.
+
+First explain you can't store Bicep templates into Octopus natively however if you package or zip them then you can.  So we will zip our bicep templates and then upload them to our Octopus server. 
+
+```powershell
+## you might want to hide your octopus information from the audience
+$OCTOPUSSERVERURL = "https://octopus.example.com"
+$OCTOPUSSERVERAPIKEY = "API-INSERTYOURAPIKEYHERE"
+$OCTOPUSSPACENAME = "yourspacename"
+
+octo pack --id="StorageTemplate" --format="zip" --version="0.0.1" --basePath="Templates" --overwrite
+
+octo push --package="StorageTemplate.0.0.1.zip" --server="$OCTOPUSSERVERURL" --apiKey="$OCTOPUSSERVERAPIKEY" --space="$OCTOPUSSPACENAME"
+```
+
+You can now switch over to Octopus Deploy.  
+
+Take a few minutes to walk people through the portal, show them things like Infrastructure > Accounts and explain how you've connected Octopus and Azure together so Octopus can create/delete/read resources in your Azure environment. 
+
+> 💡 Be mindful not everyone in the audience will be familiar with Octopus Deploy. 
+
+Head over to Library > Packages and show the audience the zip file you uploaded. 
+
+Now head to Library > Variable Sets.  Talk them through variables and add in a new variable: 
+
+* **Azure_StorageAccount_Name** in the value field ensure you use an all lowercase value to confirm with Azure Storage Account naming. 
+
+Now head over to Projects > Azure Bicep templates > Runbooks
+
