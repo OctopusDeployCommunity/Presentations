@@ -88,7 +88,115 @@ Head over to Library > Packages and show the audience the zip file you uploaded.
 
 Now head to Library > Variable Sets.  Talk them through variables and add in a new variable: 
 
-* **Azure_StorageAccount_Name** in the value field ensure you use an all lowercase value to confirm with Azure Storage Account naming. 
+* **Azure_StorageAccount_Name** in the value field ensure you use an all lowercase value to conform with Azure Storage Account naming. 
 
 Now head over to Projects > Azure Bicep templates > Runbooks
 
+Create a new Runbook. 
+
+Your first step will be a "Run Azure Script" step.  Within this step walk through the configuration process, and ensuring you select the correct worker pool. 
+
+Within the source code section enter: 
+
+```powershell
+New-AzResourceGroup -Name $OctopusParameters["Azure_Environment_ResourceGroup_Name"] -Location $OctopusParameters["Azure_Location_Abbr"]
+```
+
+Now create a second step, also a "Run Azure Script" step. Within this step walk through the configuration process, and ensuring you select the correct worker pool. 
+
+Within the source code section enter: 
+
+```powershell
+#### Reference the package with the Bicep files
+$filePath = $OctopusParameters["Octopus.Action.Package[StorageTemplate].ExtractedPath"]
+
+#### Change Directory to extracted package
+cd $filePath
+
+#### Set the deployment name
+$today=Get-Date -Format "dd-MM-yyyy"
+$deploymentName="StorageTemplate"+"$today"
+
+### Deploy the Bicep template files
+New-AzResourceGroupDeployment -Name $deploymentName -ResourceGroupName $OctopusParameters["Azure_Environment_ResourceGroup_Name"] -TemplateFile "2storage.bicep" -storageAccountName $OctopusParameters["Azure_StorageAccount_Name"]
+```
+
+Explain to the audience that this is instructing Octopus to extract the zip file, move into the directory where the extracted package is and then execute the deployment of the Bicep template. 
+
+Ensure you associate your zip file package with this step and then click Save. 
+
+You are now ready to run this Runbook.   It should take a few minutes to run.  
+
+> 💡 This might be a good time to ask the audience to ask any questions or to check if any questions are available to answer.  Or it could be a good time for you as a presenter to grab some water and catch your breath. 
+
+Once the Runbook has completed and is successful you can switch over to the Azure Portal and show the created resource for the audience. 
+
+## Demo 4 - Nested templates
+
+We now want to show the audience how you can start to use multiple templates and build up a larger deployment.  We want to show them that Bicep is powerful and easy to understand. 
+
+The nested template we'll be showing is one that deploys three Azure Web Apps, an Azure App Service plan and SQL Server and database. 
+
+Walk the user through through how you can call other templates within a Bicep template by using **module** and referencing the file location. Mention that you could use module repositories to do this or reference local templates. 
+
+Within Visual Studio Code also show the audience the Bicep visualiser tool that shows gives you a diagram of what the template will deploy. 
+
+If you want to deploy this template from your local machine you can issue the following command: 
+
+```powershell
+New-AzResourceGroupDeployment -Name OctoPetShop -ResourceGroupName SarahBicepDemos -TemplateFile octopetshop.bicep -planName octoPetASP -planSku S1 -productwebSiteName octopetproduct -shoppingwebSiteName octopetshopping -frontwebSiteName octopetfront -startFWIpAddress 0.0.0.0 -endFWIpAddress 0.0.0.0 -databaseName octopetdb -sqlServerName octopetsql -sqlAdministratorLogin octopetadmin -sqlAdministratorLoginPassword $sqlpassword
+```
+
+> 💡 This deployment can take between 2-10minutes so be aware of that. 
+
+Alternatively you can skip running it locally and start to talk to the user about getting the template ready for deployment with Octopus Deploy. 
+
+Once again pack up the templates into a zip file and upload them to Octopus Deploy. 
+
+```powershell
+octo pack --id="OctoBicepFiles" --format="zip" --version="0.0.1" --basePath="Nested-OctoPetShop" --overwrite
+
+octo push --package="OctoBicepFiles.0.0.1.zip" --server="$OCTOPUSSERVERURL" --apiKey="$OCTOPUSSERVERAPIKEY" --space="$OCTOPUSSPACENAME"
+```
+
+Switch over to the Octopus Deploy instance. 
+
+Head over to Library > Packages and show the audience the zip file you uploaded. 
+
+Now head to Library > Variable Sets. Show them the pre-created library that can help to deploy these resources. 
+
+Now head over to Projects > Azure Bicep templates > Runbooks
+
+Create a new Runbook. 
+
+Your first step will be a "Run Azure Script" step.  Within this step walk through the configuration process, and ensuring you select the correct worker pool. 
+
+Within the source code section enter: 
+
+```powershell
+New-AzResourceGroup -Name $OctopusParameters["Azure_Environment_ResourceGroup_Name"] -Location $OctopusParameters["Azure_Location_Abbr"]
+```
+
+Now create a second step, also a "Run Azure Script" step. Within this step walk through the configuration process, and ensuring you select the correct worker pool. 
+
+Within the source code section enter: 
+
+```powershell
+# Reference the package with the Bicep files
+$filePath = $OctopusParameters["Octopus.Action.Package[OctoBicepFiles].ExtractedPath"]
+
+# Change Directory to extracted package
+cd $filePath
+
+# Set the deployment name
+$today=Get-Date -Format "dd-MM-yyyy"
+$deploymentName="OctoPetShopInfra"+"$today"
+
+# Deploy the Bicep template files
+
+New-AzResourceGroupDeployment -Name $deploymentName -ResourceGroupName $OctopusParameters["Azure_Environment_ResourceGroup_Name"] -TemplateFile octopetshop.bicep -planName $planName -planSku $planSku -productwebSiteName $OctopusParameters["ProductService.Name"] -shoppingwebSiteName $OctopusParameters["ShoppingCartService.Name"] -frontwebSiteName $OctopusParameters["WebApp.Name"] -startFWIpAddress $startFWIpAddress -endFWIpAddress $endFWIpAddress -databaseName $OctopusParameters["Database.Name"] -sqlServerName $OctopusParameters["Database.Server"] -sqlAdministratorLogin $OctopusParameters["Database.Admin.Username"] -sqlAdministratorLoginPassword $OctopusParameters["Database.Admin.Password"]
+```
+
+> 💡 Explain to the audience that even though you are deploying a more complex template you aren't doing anything different inside Octopus, the process is the same. 
+
+Kick start the Runbook, again this may take 2-10minutes to run so bare that in mind. 
