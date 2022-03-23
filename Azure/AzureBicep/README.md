@@ -86,7 +86,7 @@ Detailed explanations of each demonstration associated with this presentation ca
 |  [Demo 1 - Azure Bicep Storage template ](demos/README.md#demo-1---azure-bicep-storage-template)           | ?       | [Link]()
 |  [Demo 2 - Azure Bicep Storage template with a failure](demos/README.md#demo-2---azure-bicep-storage-template-with-a-failure)  | ?       | [Link]()
 |  [Demo 3 - Deploy Azure Bicep template from Octopus Deploy ](demos/README.md#demo-3---deploy-azure-bicep-template-from-octopus-deploy) | ?       | [Link]()
-|  [Demo 4 ](demos/README.md#demo-4---nested-templates)  | ?       | [Link]()
+|  [Demo 4 - Nested Templates](demos/README.md#demo-4---nested-templates)  | ?       | [Link]()
 
 
 ## Trained Presenters
