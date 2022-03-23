@@ -35,9 +35,9 @@ code.
 
 This training repository is divided in to the following sections:
 
-| [Slides](#slides) | [Demos](demos/README.md) | [Deployment](deployment/README.md) | 
+| [Slides](#slides) | [Demos](demos/README.md) | [Pre-Session Setup](presessionsetup/README.md) | 
 |-------------------|---------------------------|--------------------------------------
-| 42 slides - 25 minutes, | 4 demos - 20 minutes, | 1 automated deployment
+| 42 slides - 25 minutes, | 4 demos - 20 minutes, | 1 pre-session setup - 1 hour
 
 
 
@@ -54,7 +54,7 @@ Octopus Deploy      | 12-15 | This section is an introduction to Octopus Deploy.
 Demo                    | 16     | This is chance to walk through the demos. 
 Next steps                    | 18  | Talk about the next steps of Infrastructure as Code, source control etc
 Summary                    | 19-21      | Summarize what you talked about, ask folk to try Octopus and say thank you. 
-Additional Slide                    | 22-26     |These are additional hidden slides you can add or replace within the presentation if needed. 
+Additional Slides                    | 22-26     |These are additional hidden slides you can add or replace within the presentation if needed. 
 
 ### Timing
 
@@ -68,11 +68,11 @@ Additional Slide                    | 22-26     |These are additional hidden sli
 40:00 - 45:00 | 
 45:00 - 50:00 | 
 
-## Deployment / Preparation
+## Preparation
 
 >**What's Here?**  - including the prerequisites.
 
-[Instructions and prerequisites are outlined here](deployment/README.md). 
+[Instructions and prerequisites are outlined here](presessionsetup/README.md). 
 
 
 ## Demos
@@ -83,8 +83,10 @@ Detailed explanations of each demonstration associated with this presentation ca
 
 | Demo 	                                    | Minutes | Video
 --------------------------------------------|---------|-----------------
-- [Demo 1 - Azure Bicep Storage template ](demos/README.md#demo-1---azure-bicep-storage-template) <br/>- [Demo 2 - Azure Bicep Storage template with a failure](demos/README.md#demo-2---azure-bicep-storage-template-with-a-failure) <br/>- [Demo 3 - Deploy Azure Bicep template from Octopus Deploy ](demos/README.md#demo-3---deploy-azure-bicep-template-from-octopus-deploy)<br/>- [Demo 4 ](demos/README.md#demo-4---nested-templates) 
-
+|  [Demo 1 - Azure Bicep Storage template ](demos/README.md#demo-1---azure-bicep-storage-template)           | ?       | [Link]()
+|  [Demo 2 - Azure Bicep Storage template with a failure](demos/README.md#demo-2---azure-bicep-storage-template-with-a-failure)  | ?       | [Link]()
+|  [Demo 3 - Deploy Azure Bicep template from Octopus Deploy ](demos/README.md#demo-3---deploy-azure-bicep-template-from-octopus-deploy) | ?       | [Link]()
+|  [Demo 4 ](demos/README.md#demo-4---nested-templates)  | ?       | [Link]()
 
 
 ## Trained Presenters
