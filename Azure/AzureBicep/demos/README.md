@@ -1,6 +1,6 @@
 # Demos instructions
 
-The following document describe how to do all the demos presented during the session. 
+The following document describe how to do all the demos presented during the session. You can find all the Azure Bicep templates mentioned below [here](https://github.com/OctopusDeployCommunity/Presentations/tree/main/Azure/AzureBicep/Templates).
 
 ## Suggested setup to present
 
