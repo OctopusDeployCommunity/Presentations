@@ -14,7 +14,7 @@ We'll then look at how you can automate the deployment of your infrastructure as
 | Resources          | Links                            |
 |-------------------|----------------------------------|
 | Presentation       | - [PowerPoint](https://github.com/OctopusDeployCommunity/Presentations/blob/main/Azure/AzureBicep/CombineAzureBicepandOctopusDeployv1.pptx) | [Google Slides]()
-| Videos            | - [Dry Run Rehearsal](https://communitypresentations.blob.core.windows.net/recordings/azure/azurebicep/bicepoctopus_dryrun_march2022.mp4) <br/>- [Directors Cut]() <br/> 
+| Videos            | - [Dry Run Rehearsal](https://communitypresentations.blob.core.windows.net/recordings/azure/azurebicep/bicepoctopus_dryrun_march2022.mp4) <br/>- [Directors Cut](https://communitypresentations.blob.core.windows.net/recordings/azure/azurebicep/bicepoctopus_directorcut_march2022.mp4) <br/> 
 | Demos             | - [Demo 1 - Azure Bicep Storage template ](demos/README.md#demo-1---azure-bicep-storage-template) <br/>- [Demo 2 - Azure Bicep Storage template with a failure](demos/README.md#demo-2---azure-bicep-storage-template-with-a-failure) <br/>- [Demo 3 - Deploy Azure Bicep template from Octopus Deploy ](demos/README.md#demo-3---deploy-azure-bicep-template-from-octopus-deploy)<br/>- [Demo 4 - Nested templates ](demos/README.md#demo-4---nested-templates) |
 
 ## How To Use
